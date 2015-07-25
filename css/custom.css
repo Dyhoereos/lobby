@@ -41,7 +41,15 @@ th {
 #showcase {
 	height: 67px;
 	border-style: solid;
-	border-width: 2px;
-	border-color: #C0C0C0;
+	border-width: 1px;
+	border-color: #337ab7;
 	vertical-align: text-middle;
 	text-align: center;
+}
+.fright {
+	float: right;
+}
+
+.stats-padding {
+	padding-left:40px;
+}
