@@ -91,7 +91,7 @@
             <div class="form-group">
               <label for="exampleInputName2">Host</label>
               <input type="text" class="form-control" id="host-name" placeholder="Host Name">
-              <input type="hidden" id="input-time"> 
+              <input type="hidden" id="time"> 
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
@@ -131,11 +131,19 @@
       $(".time-slot").click(function() {
         $("#reserve-form").css("display", "block");
         var time = $(this).attr('id');
-        $("#input-time").val(time);
+        $("#time").val(time);
       });
 
       $("#input-submit").click(function(e) {
         e.preventDefault();
+        var hostName = $("#host-name").val();
+        var email = $("#email").val();
+        var time = $("#time").val();
+        var data = {};
+        data[time] = {hostName: hostName, email: email};
+        myDataRef.set(data);
+        $("#host-name").val("");
+        $("#email").val("");
       })
     </script>
   </body>
