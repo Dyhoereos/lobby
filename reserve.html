@@ -90,30 +90,31 @@
           <form id="reserve-form" style="display: none">
             <div class="form-group">
               <label for="exampleInputName2">Host</label>
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="Host Name">
+              <input type="text" class="form-control" id="host-name" placeholder="Host Name">
+              <input type="hidden" id="input-time"> 
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              <input type="email" class="form-control" id="email" placeholder="Email">
             </div>
             <div class="form-group">
               <label for="exampleInputName2">Member1</label>
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="Member Name">
+              <input type="text" class="form-control" id="member1-name" placeholder="Member Name">
             </div>
             <div class="form-group">
               <label for="exampleInputName2">Member2</label>
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="Member Name">
+              <input type="text" class="form-control" id="member2-name" placeholder="Member Name">
             </div>
             <div class="form-group">
               <label for="exampleInputName2">Member3</label>
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="Member Name">
+              <input type="text" class="form-control" id="member3-name" placeholder="Member Name">
             </div>
             <div class="checkbox">
               <label>
                 <input type="checkbox"> Post this reservation in SAP Jam
               </label>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default" id="input-submit">Submit</button>
           </form>
         </div>
       </div>
@@ -126,9 +127,16 @@
 
     <script>
       var myDataRef = new Firebase('https://gsapv.firebaseio.com/');
+
       $(".time-slot").click(function() {
         $("#reserve-form").css("display", "block");
+        var time = $(this).attr('id');
+        $("#input-time").val(time);
       });
+
+      $("#input-submit").click(function(e) {
+        e.preventDefault();
+      })
     </script>
   </body>
 </html>
