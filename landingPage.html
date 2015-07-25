@@ -22,34 +22,110 @@
   <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand">Games@SAP-Vancouver</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#login">Login</a></li>
-            <li><a href="#contactFacilities">Contact Facilities</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Games@SAP-Vancouver</a>
       </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>  
+          <!--change to menu button instead of words? align right? -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Profile</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Contact Facilities</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
     </nav>
 
-    <div class="container">
-
-      <div class="GamesContainer">
-        <h1>Games</h1>
-        
+    <div class="container columnContainer" id="main-container" role="main">
+      <div class="row">
+        <div class="col-xs-6">
+          <h2>Games</h2>
+          <div class="tab">
+            <table class="table table-bordered">
+            <col width="30%">
+            <col width="70%">
+              <thead>
+                <tr>
+                  <th>Availability</th>
+                  <th>Game</th>
+                </tr>
+              </thead>
+              <tr>
+                <th><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></th>
+                <th>Foosball</th>
+              </tr>
+              <tr>
+                <th><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></th>
+                <th>Ping Pong</th>
+              </tr>
+              <tr>
+                <th><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></th>
+                <th>Pool</th>
+              </tr>
+              <tr>
+                <th><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></th>
+                <th>Xbox 360</th>
+              </tr>
+              <tr>
+                <th><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></th>
+                <th>Playstation 2</th>
+              </tr>
+            </table>
+          <p><a class="btn btn-default" href="#" role="button">&#10133; Add Game</a></p>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <h2>Top Players</h2>
+            <div class="tab">
+            <table class="table table-bordered" id="topPlayersTable">
+              <col width="30%">
+              <col width="70%">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Player</th>
+                </tr>
+              </thead>
+              <tr>
+                <th>1</th>
+                <th><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span> Michael Lee</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span> Chuck Norris</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> Gregory House</th>
+              </tr>
+              <tr>
+                <th>4</th>
+                <th><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span> Dennis Chau</th>
+              </tr>
+              <tr>
+                <th>5</th>
+                <th><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> Umesh Dinkar</th>
+              </tr>
+            </table>
+          <p><a class="btn btn-default" href="#" role="button">Players' Details &raquo;</a></p>
+          </div class="tab">
+        </div>
       </div>
-
-    </div><!-- /.container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>

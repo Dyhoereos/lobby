@@ -1,11 +1,35 @@
 body {
   padding-top: 50px;
 }
-.GamesContainer {
+.columnContainer {
   padding: 40px 15px;
-  text-align: left;
+  text-align: center;
 }
 
 #main-container {
 	padding-top: 20px;
+}
+
+.glyphicon.glyphicon-ok {
+	color: green;
+}
+
+.glyphicon.glyphicon-remove {
+	color: red;
+}
+
+th {
+	text-align: center;
+}
+
+.glyphicon.glyphicon-triangle-bottom {
+	color: red;
+}
+
+.glyphicon.glyphicon-triangle-top {
+	color: green;
+}
+
+.tab{
+	padding-top: 30px;
 }
