@@ -5,3 +5,7 @@ body {
   padding: 40px 15px;
   text-align: left;
 }
+
+#main-container {
+	padding-top: 20px;
+}
