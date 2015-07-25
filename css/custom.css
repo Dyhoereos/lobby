@@ -9,3 +9,16 @@ body {
 #main-container {
 	padding-top: 20px;
 }
+
+#player-name {
+	font-size: 40px;
+}
+
+#showcase {
+	height: 67px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #C0C0C0;
+	vertical-align: text-middle;
+	text-align: center;
+}
