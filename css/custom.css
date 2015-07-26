@@ -33,6 +33,7 @@ th {
 
 .tab{
 	padding-top: 30px;
+	border-color: #F0AB00;
 }
 
 #player-name {
@@ -43,7 +44,7 @@ th {
 	height: 67px;
 	border-style: solid;
 	border-width: 1px;
-	border-color: #337ab7;
+	border-color: #F0AB00;
 	vertical-align: text-middle;
 	text-align: center;
 }
@@ -79,6 +80,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b5ef', end
 	color: #FFFFFF;
 }
 
-.navbar-inverse li{
+.navbar-inverse li {
 	color: #FFFFFF;
+}
+
+.list-group-item.active, .list-group-item.active:hover {
+ background-color: #F0AB00;
+ border-color: #F0AB00;
+}
+
+.list-group-item{
+ border-color: #F0AB00; 
+}
+
+thead {
+ background-color: #F0AB00;
+}
+
+.panel-heading {
+	background-color: #F0AB00;
+}
+
+.panel-primary > .panel-heading {
+ background-color: #F0AB00;
+ border-color: #F0AB00;
+}
+
+.panel-primary {
+ border-color: #F0AB00;
+}
+.navbar-inverse .navbar-nav > li > a {
+ color: #FFFFFF;
+}
+
+.navbar-inverse li{
+ color: #FFFFFF;
+}
+
+.list-group-item.active, .list-group-item.active:hover {
+ background-color: #F0AB00;
+ border-color: #F0AB00;
+}
+
+.list-group-item{
+ border-color: #F0AB00; 
+}
+
+thead {
+ background-color: #F0AB00;
 }
