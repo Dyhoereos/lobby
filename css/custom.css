@@ -54,3 +54,31 @@ th {
 .stats-padding {
 	padding-left:40px;
 }
+
+.navbar-inverse {
+	/* background-color: #008FD3; */
+	color: #FFFFFF;
+}
+
+#mygrad {
+	background: #00b5ef;
+	background: -moz-linear-gradient(top, #00b5ef 0%, #1c63bd 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b5ef), color-stop(100%,#1c63bd));
+background: -webkit-linear-gradient(top, #00b5ef 0%,#1c63bd 100%);
+background: -o-linear-gradient(top, #00b5ef 0%,#1c63bd 100%);
+background: -ms-linear-gradient(top, #00b5ef 0%,#1c63bd 100%);
+background: linear-gradient(to bottom, #00b5ef 0%,#1c63bd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b5ef', endColorstr='#1c63bd',GradientType=0 );
+}
+
+.navbar-inverse .navbar-brand{
+	color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #FFFFFF;
+}
+
+.navbar-inverse li{
+	color: #FFFFFF;
+}
