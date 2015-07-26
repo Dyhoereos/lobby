@@ -119,7 +119,7 @@
           </form>
           <div id="reserve-info" style="display:none">
             <ul class="list-group">
-              <li class="list-group-item disabled">Reserved</li>
+              <li class="list-group-item list-group-item-info">Reserved</li>
               <li class="list-group-item">Host: 
                 <span id="info-host"></span>
               </li>
@@ -162,12 +162,12 @@
         $.each(data, function(itemName, item) {
           var time = item.time;
           console.log(item);
-          $("#" + time).addClass("list-group-item-danger").data("info", item);
+          $("#" + time).addClass("list-group-item-info").data("info", item);
         });
       };
 
       $(".time-slot").click(function() {
-        if ($(this).hasClass("list-group-item-danger")) {
+        if ($(this).hasClass("list-group-item-info")) {
           $("#reserve-form").css("display", "none");
           $("#reserve-info").css("display", "block");
           var data = $(this).data("info");
