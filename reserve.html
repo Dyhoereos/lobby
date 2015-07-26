@@ -102,9 +102,11 @@
           <h2>Reserve</h2>
           <form id="reserve-form" style="display: none">
             <div class="form-group">
+              <input class="form-control" id="time" type="text" placeholder="Disabled input here..." disabled>
+            </div>
+            <div class="form-group">
               <label for="exampleInputName2">Host</label>
               <input type="text" class="form-control" id="host-name" placeholder="Host Name">
-              <input type="hidden" id="time"> 
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
@@ -136,7 +138,7 @@
                 <span id="info-host"></span>
               </li>
               <li class="list-group-item">Email: 
-                <span id="info-host-email"></span>
+                <span id="info-email"></span>
               </li>
               <li class="list-group-item">Member1: 
                 <span id="info-member1"></span>
@@ -184,6 +186,10 @@
           $("#reserve-info").css("display", "block");
           var data = $(this).data("info");
           $("#info-host").text(data.hostName);
+          $("#info-email").text(data.email);
+          $("#info-member1").text(data.member1);
+          $("#info-member2").text(data.member2);
+          $("#info-member3").text(data.member3);
         } else {
           $("#reserve-info").css("display", "none");
           $("#reserve-form").css("display", "block");
@@ -197,10 +203,23 @@
         var hostName = $("#host-name").val();
         var email = $("#email").val();
         var time = $("#time").val();
-        var data = {time: time, hostName: hostName, email: email};
+        var member1 = $("#member1-name").val();
+        var member2 = $("#member2-name").val();
+        var member3 = $("#member3-name").val();
+        var data = {
+          time: time,
+          hostName: hostName,
+          email: email,
+          member1: member1,
+          member2: member2,
+          member3: member3
+        };
         myDataRef.push(data);
         $("#host-name").val("");
         $("#email").val("");
+        $("#member1-name").val("");
+        $("#member2-name").val("");
+        $("#member3-name").val("");
       });
     </script>
   </body>
